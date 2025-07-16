@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町の便利屋さん 空 - エクステリア販売・施工</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 外部CSSファイルへのリンク -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- ヘッダーセクション (Homeページと共通) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <div class="text-2xl font-bold text-gray-900 rounded-md">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">町の便利屋さん 空</a>
+            </div>
+            <!-- デスクトップ用ナビゲーションメニュー -->
+            <nav>
+                <ul class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">Home</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">サービス</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">会社概要</a></li>
+                    <li><a href="exterior.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">エクステリア販売・施工</a></li>
+                    <li><a href="price.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">料金</a></li>
+                </ul>
+                <!-- ハンバーガーメニューアイコン (モバイル表示時のみ) -->
+                <div class="md:hidden burger space-y-2 cursor-pointer p-2 rounded-md hover:bg-gray-100 transition-colors">
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line1"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line2"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line3"></div>
+                </div>
+            </nav>
+        </div>
+        <!-- モバイルナビゲーションメニュー (JavaScriptで表示/非表示を切り替え) -->
+        <ul class="md:hidden nav-links fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-500 ease-in-out z-50">
+            <li><a href="index.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">Home</a></li>
+            <li><a href="services.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">サービス</a></li>
+            <li><a href="about.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">会社概要</a></li>
+            <li><a href="exterior.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">エクステリア販売・施工</a></li>
+            <li><a href="price.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">料金</a></li>
+        </ul>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">エクステリア販売・施工</h1>
+            <p class="text-lg text-center mb-12 text-gray-700 max-w-2xl mx-auto">お客様の理想の住まいを実現するため、カーポート、フェンス、物置、デッキなど、様々なエクステリアの販売から設置まで一貫して承ります。豊富な経験と確かな技術で、お客様のライフスタイルに合わせた最適なプランをご提案いたします。</p>
+
+            <!-- カーポート・車庫セクション -->
+            <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">カーポート・車庫</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/3357FF/FFFFFF?text=カーポート施工例" alt="カーポート施工例イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">大切な愛車を雨風や紫外線から守るカーポート。デザイン性、機能性、耐久性を兼ね備えた様々なタイプを取り扱っております。お客様の敷地やご予算に合わせて最適なカーポートをご提案し、確実な施工を行います。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>カーポートや車庫の設置・販売</li>
+                        <li>積雪地域に対応した高強度タイプもご用意</li>
+                        <li>デザイン性の高いモダンなタイプから実用的なものまで</li>
+                        <li>既存のカーポートの修繕・撤去も対応</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- フェンス・塀セクション -->
+            <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">フェンス・塀</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>プライバシー保護、防犯対策、境界線の明確化に</li>
+                        <li>様々な素材（アルミ、木材、樹脂など）とデザイン</li>
+                        <li>既存のフェンスの交換・修繕</li>
+                        <li>ブロック塀の設置や解体も承ります</li>
+                    </ul>
+                    <div>
+                        <img src="https://placehold.co/600x400/57FF33/FFFFFF?text=フェンス施工例" alt="フェンス施工例イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">お庭のプライバシーを守り、防犯性を高めるフェンスや塀。デザイン性も重視し、住まいの外観と調和する最適なものをご提案します。耐久性に優れた素材で、長期間安心してお使いいただけます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 物置・倉庫セクション -->
+            <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">物置・倉庫</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/FF5733/FFFFFF?text=物置設置例" alt="物置設置例イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">収納スペース不足を解消する物置や倉庫。サイズ、デザイン、機能性など、お客様の用途や設置場所に合わせた最適な製品をご提案します。組み立てから設置まで、プロが丁寧に行います。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>様々なサイズ、タイプの物置・倉庫の販売・設置</li>
+                        <li>ガーデニング用品、アウトドア用品の収納に最適</li>
+                        <li>耐久性、防犯性に優れた製品をご提案</li>
+                        <li>既存の物置の解体・撤去も対応</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ウッドデッキ・テラスセクション -->
+            <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">ウッドデッキ・テラス</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>お庭に開放的なリビング空間を創造</li>
+                        <li>天然木、人工木など素材の選択が可能</li>
+                        <li>デザイン、サイズ、形状など自由な設計</li>
+                        <li>メンテナンス性にも配慮したご提案</li>
+                    </ul>
+                    <div>
+                        <img src="https://placehold.co/600x400/F0E68C/FFFFFF?text=ウッドデッキ施工例" alt="ウッドデッキ施工例イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">お庭に新たな価値を生み出すウッドデッキやテラス。家族や友人と過ごす憩いの場、趣味のスペースとして、お客様のライフスタイルに合わせた理想の空間を創造します。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- お問い合わせCTAセクション: 行動を促す呼びかけ -->
+            <section class="bg-blue-700 text-white py-16 text-center rounded-xl shadow-lg">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">エクステリアに関するご相談・お見積もりは無料！</h2>
+                <p class="text-xl md:text-2xl mb-8">専門スタッフがお客様のご要望を丁寧にヒアリングし、最適なプランをご提案いたします。</p>
+                <a href="about.html#contact" class="bg-white text-blue-700 hover:bg-gray-200 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors duration-300 transform hover:scale-105">お問い合わせはこちら</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- フッターセクション (Homeページと共通) -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 町の便利屋さん 空. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScriptファイルへのリンク: モバイルナビゲーションの動作を制御 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

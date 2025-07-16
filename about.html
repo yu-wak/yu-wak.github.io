@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町の便利屋さん 空 - 会社概要</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 外部CSSファイルへのリンク -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- ヘッダーセクション (Homeページと共通) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <div class="text-2xl font-bold text-gray-900 rounded-md">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">町の便利屋さん 空</a>
+            </div>
+            <!-- デスクトップ用ナビゲーションメニュー -->
+            <nav>
+                <ul class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">Home</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">サービス</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">会社概要</a></li>
+                    <li><a href="exterior.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">エクステリア販売・施工</a></li>
+                    <li><a href="price.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">料金</a></li>
+                </ul>
+                <!-- ハンバーガーメニューアイコン (モバイル表示時のみ) -->
+                <div class="md:hidden burger space-y-2 cursor-pointer p-2 rounded-md hover:bg-gray-100 transition-colors">
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line1"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line2"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line3"></div>
+                </div>
+            </nav>
+        </div>
+        <!-- モバイルナビゲーションメニュー (JavaScriptで表示/非表示を切り替え) -->
+        <ul class="md:hidden nav-links fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-500 ease-in-out z-50">
+            <li><a href="index.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">Home</a></li>
+            <li><a href="services.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">サービス</a></li>
+            <li><a href="about.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">会社概要</a></li>
+            <li><a href="exterior.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">エクステリア販売・施工</a></li>
+            <li><a href="price.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">料金</a></li>
+        </ul>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">会社概要</h1>
+            <p class="text-lg text-center mb-12 text-gray-700 max-w-2xl mx-auto">「町の便利屋さん 空」は、地域社会の皆様の「困った」を解決し、快適な暮らしをサポートすることを使命としています。お客様一人ひとりのニーズに寄り添い、丁寧かつ迅速なサービスを提供することをお約束いたします。</p>
+
+            <!-- 会社情報セクション -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">会社情報</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-gray-700">
+                    <div>
+                        <p class="mb-4"><strong class="text-gray-900">会社名:</strong> 町の便利屋さん 空</p>
+                        <p class="mb-4"><strong class="text-gray-900">所在地:</strong> 〒060-0000 北海道札幌市中央区XXX-XXX-XXX</p>
+                        <p class="mb-4"><strong class="text-gray-900">設立:</strong> 20XX年X月</p>
+                        <p class="mb-4"><strong class="text-gray-900">代表者:</strong> 空 太郎</p>
+                    </div>
+                    <div>
+                        <p class="mb-4"><strong class="text-gray-900">事業内容:</strong> 便利屋業全般、家内整理・片付け、不用品回収・処分、草刈り、引越し手伝い、解体・移動、土木作業、エクステリア販売・施工</p>
+                        <p class="mb-4"><strong class="text-gray-900">営業時間:</strong> 9:00 - 18:00 (年中無休)</p>
+                        <p class="mb-4"><strong class="text-gray-900">電話番号:</strong> 011-XXX-XXXX</p>
+                        <p class="mb-4"><strong class="text-gray-900">FAX番号:</strong> 011-XXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- お問い合わせセクション -->
+            <section id="contact" class="bg-blue-50 p-8 rounded-xl shadow-lg mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">お問い合わせ</h2>
+                <p class="text-lg text-center mb-8 text-gray-700">サービスに関するご質問、お見積もり依頼など、お気軽にお問い合わせください。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">お電話でのお問い合わせ</h3>
+                        <p class="text-3xl font-bold text-blue-600 mb-4">011-XXX-XXXX</p>
+                        <p class="text-gray-700">受付時間: 9:00 - 18:00 (年中無休)</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">メールでのお問い合わせ</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">お名前</label>
+                                <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="お名前をご入力ください" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">メールアドレス</label>
+                                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="メールアドレスをご入力ください" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">お問い合わせ内容</label>
+                                <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-md transition-colors duration-300 transform hover:scale-105">送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- アクセスマップセクション -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">アクセスマップ</h2>
+                <div class="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden shadow-md">
+                    <!-- Google Maps埋め込みコードのプレースホルダー -->
+                    <!-- 実際の地図を埋め込む場合は、以下のiframeタグを適切なGoogle Mapsの埋め込みコードに置き換えてください。 -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.228227653205!2d141.3400039158759!3d43.0686950791457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b297b4c9e7c5b%3A0x6b7b7b7b7b7b7b7b!2sSapporo%20Station!5e0!3m2!1sen!2sjp!4v1678901234567!5m2!1sen!2sjp"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg">
+                    </iframe>
+                </div>
+                <p class="text-center text-gray-600 mt-4">※上記は札幌駅の地図です。実際の所在地に合わせて変更してください。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッターセクション (Homeページと共通) -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 町の便利屋さん 空. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScriptファイルへのリンク: モバイルナビゲーションの動作を制御 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

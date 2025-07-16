@@ -1,225 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ベーシックコーポレートサイト</title>
-<link rel="stylesheet" media="all" href="css/ress.min.css" />
-<link rel="stylesheet" media="all" href="css/style.css" />
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/style.js"></script>
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="img/favicon.png">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町の便利屋さん 空 - サービス</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 外部CSSファイルへのリンク -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header>    
-<div class="container">
-<div class="row">
-    <div class="col span-12">
-    <div class="head">
-        <h1><a href="index.html">BasicCorp</a></h1>
-		<div class="telbox">TEL：00-0000-0000</div>
-        <div id="open"></div>
-        <div id="close"></div> 
-        </div>
-    </div></div>
-	</div>
-<div class="menu">
-<div class="container">
-<div class="row">
-    <div class="col span-12">
-        <nav>  
-            <div id="navi">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="subpage.html">会社概要</a></li>
-            <li><a href="subpage.html">サブページ</a></li>
-            <li><a href="subpage.html">サブページ</a></li>
-            <li><a href="subpage.html">サブページ</a></li>
-            <li><a href="subpage.html">お問い合わせ</a></li>
-            </ul>
+<body class="bg-gray-100 text-gray-800">
+    <!-- ヘッダーセクション (Homeページと共通) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <div class="text-2xl font-bold text-gray-900 rounded-md">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">町の便利屋さん 空</a>
+            </div>
+            <!-- デスクトップ用ナビゲーションメニュー -->
+            <nav>
+                <ul class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">Home</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">サービス</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">会社概要</a></li>
+                    <li><a href="exterior.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">エクステリア販売・施工</a></li>
+                    <li><a href="price.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">料金</a></li>
+                </ul>
+                <!-- ハンバーガーメニューアイコン (モバイル表示時のみ) -->
+                <div class="md:hidden burger space-y-2 cursor-pointer p-2 rounded-md hover:bg-gray-100 transition-colors">
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line1"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line2"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line3"></div>
                 </div>
-        </nav>
-    </div>
+            </nav>
         </div>
-    </div>
-	</div>
-    </header>
-    <div class="mainimg">
-              <img src="img/subimg.jpg" alt="サブページ画像">
-        </div>
-    <main>
-	<article>
-<div class="container">
-<div class="row">
-    <div class="col span-12">
-	<div class="breadcrumb">
-		<ul>
-			<li><a href="index.html">ホーム</a> > サブページ</li>
-		</ul>
-		</div>
-    
-		<h2 class="blueback">見出し</h2>
-<p>タイトルなどの見出しに使用します。h1からh6までの大きさがあります。</p>
-        <h1>h1　見出し</h1>
-        <h2>h2　見出し</h2>
-        <h3>h3　見出し</h3>
-        <h4>h4　見出し</h4>
-        <h5>h5　見出し</h5>
-        <h6>h6　見出し</h6>
-
-        <h2 class="blueback">カラム</h2>
-		<p>シンプルなカラムのみ制作しています。横幅が12の数字になるように、レイアウトを組みます。</p>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0; margin-bottom: 1em;" class="col span-1">カラム1</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0; margin-bottom: 1em;" class="col span-11">カラム11</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0; margin-bottom: 1em;"  class="col span-2">カラム2</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0; margin-bottom: 1em;" class="col span-10">カラム10</div>
-	</div>	
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-3">カラム3</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-9">カラム9</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-4">カラム4</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-8">カラム8</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-5">カラム5</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-7">カラム7</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-6">カラム6</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-6">カラム6</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-7">カラム7</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-5">カラム5</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-8">カラム8</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-4">カラム4</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-9">カラム9</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-3">カラム3</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-10">カラム10</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-2">カラム2</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-11">カラム11</div>
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;" class="col span-1">カラム1</div>
-	</div>
-<div class="row">
-	<div style="background-color: #F1F1F1; padding:1rem 0;  margin-bottom: 1rem;"  class="col span-12">カラム12</div>
-	</div>
-
-		<h2 class="blueback">ボタン</h2>
-            <p><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a><a href="" class="button">ボタン</a></p>
-		
-		<h2 class="blueback">フォーム</h2>
-		<form action="" method="post">
-                <p>
-                <label for="name">お名前</label>
-                <input class="full-width" type="text" id="name" name="name">
-                </p>
-                <p>
-                <label for="email">メールアドレス</label>
-                <input class="full-width" type="email" id="email" name="email">
-                </p>
-                <p>
-                <label for="message">お問い合わせ内容</label>
-                    <textarea class="full-width" id="textarea" name="textarea"></textarea>
-                </p>
-                <p>
-                <input class="button" type="submit" value="送信">
-                </p>
-            </form>
-		
-		<h2 class="blueback">リスト</h2>
-		<ul>
-        <li>リストスタイル</li>
-        <li>リストスタイル</li>
-        <li>リストスタイル</li>
+        <!-- モバイルナビゲーションメニュー (JavaScriptで表示/非表示を切り替え) -->
+        <ul class="md:hidden nav-links fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-500 ease-in-out z-50">
+            <li><a href="index.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">Home</a></li>
+            <li><a href="services.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">サービス</a></li>
+            <li><a href="about.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">会社概要</a></li>
+            <li><a href="exterior.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">エクステリア販売・施工</a></li>
+            <li><a href="price.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">料金</a></li>
         </ul>
-		<ol>
-        <li>番号付きのリスト</li>
-        <li>番号付きのリスト</li>
-        <li>番号付きのリスト</li>
-        </ol>
-		
-		<h2 class="blueback">テーブル</h2>
-		<table class="full-width">
-     <thead>
-         <tr>
-             <th>タイトル</th>
-             <th>タイトル</th>
-             <th>タイトル</th>
-         </tr>
-    </thead>
-    <tbody>
-         <tr>
-             <td>文章</td>
-             <td>文章</td>
-             <td>文章</td>
-         </tr>
-         <tr>
-             <td>文章</td>
-             <td>文章</td>
-             <td>文章</td>
-         </tr>
-         <tr>
-             <td>文章</td>
-             <td>文章</td>
-             <td>文章</td>
-         </tr>
-    </tbody>    
-    </table>
-	
-	<h2 class="blueback">コード</h2>
-	<pre><code>.test-class {
-background-color: F1F1F1;
-font-size: 16px;}</code></pre>
+    </header>
 
-		</div>
-    </div>    
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">サービス一覧</h1>
+            <p class="text-lg text-center mb-12 text-gray-700 max-w-2xl mx-auto">暮らしの「困った」を解決する、様々なサービスを提供しています。どんな小さなお困り事でも、お気軽にご相談ください。</p>
+
+            <!-- サービスカテゴリ: 便利屋（何でも屋） -->
+            <section id="benriya" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">便利屋（何でも屋）</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/FF5733/FFFFFF?text=何でも屋サービス" alt="何でも屋サービスイメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">「こんなことできるのかしら？」どんな些細なことでも、まずはお声がけください。お客様のお困り事に真摯に向き合い、解決に向けて全力でサポートいたします。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>お困りな問題に対応</li>
+                        <li>こんなことできるのかしら？　どんな事もお手伝いします</li>
+                        <li>ちょっとした建築・土木作業も大丈夫</li>
+                        <li>DIYのお手伝い（鉄の溶接や木材加工も大丈夫）</li>
+                        <li>簡単な調査依頼</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 家内整理・片付け・ゴミ屋敷 -->
+            <section id="katazuke" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">家内整理・片付け・ゴミ屋敷</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>家中や物置内の片付け・整理・清掃</li>
+                        <li>お客様のご要望に合わせた最適なプランをご提案</li>
+                        <li>プライバシーを尊重し、丁寧な作業を心がけます</li>
+                    </ul>
+                    <div>
+                        <img src="https://placehold.co/600x400/33FF57/FFFFFF?text=片付けサービス" alt="片付けサービスイメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">「どこから手をつけていいか分からない…」そんなお悩みを抱えていませんか？家中や物置の整理・片付け、清掃まで一貫してサポートいたします。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 不用品の回収・処分 -->
+            <section id="fuyohin" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">不用品の回収・処分</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/FFC107/FFFFFF?text=不用品回収" alt="不用品回収イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">「量が多いものや重量物で困っている…」そんな時もご安心ください。一点から大量の不用品まで、迅速かつ適切に回収・処分を行います。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>量が多いものや重量物まで回収・処分を行います。</li>
+                        <li>家電リサイクル品、粗大ゴミなどもご相談ください。</li>
+                        <li>秘密厳守で対応いたします。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 草刈り -->
+            <section id="kusakari" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">草刈り</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>家の周りから広い面積まで対応します。</li>
+                        <li>草刈り機と自走式草刈り機で作業します。</li>
+                        <li>定期的な草刈りも承ります。</li>
+                    </ul>
+                    <div>
+                        <img src="https://placehold.co/600x400/007BFF/FFFFFF?text=草刈りサービス" alt="草刈りサービスイメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">「庭の草が伸び放題で困っている」「広い敷地の草刈りが大変」など、草刈りに関するお悩みは空にお任せください。プロの技術で綺麗に仕上げます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 引っ越しのお手伝い -->
+            <section id="hikkoshi" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">引っ越しのお手伝い</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=引越しお手伝い" alt="引越しお手伝いイメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">「ちょっとした荷物の移動」「大型家具の運搬」など、簡単なお引越しのお手伝いをいたします。ユニック車で重量物にも対応可能です。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>簡単なお引越しのお手伝い</li>
+                        <li>ユニック車で重量物の対応</li>
+                        <li>荷造り・荷解きのお手伝いもご相談ください。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 解体・移動（車庫や物置・小屋等） -->
+            <section id="kaitai" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">解体・移動（車庫や物置・小屋等）</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>車庫・物置・カーポート・納屋等その他の解体や移動、設置</li>
+                        <li>重量物の撤去や移動（ユニック車やキャタピラ式のユニクレーン作業）</li>
+                        <li>迅速かつ安全に作業を行います。</li>
+                    </ul>
+                    <div>
+                        <img src="https://placehold.co/600x400/20B2AA/FFFFFF?text=解体・移動" alt="解体・移動イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">不要になった車庫や物置、カーポートなどの解体・撤去、または移動・設置を承ります。重量物の撤去も専門の機材で対応可能です。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- サービスカテゴリ: 土木作業 -->
+            <section id="doboku" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">土木作業</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/8A2BE2/FFFFFF?text=土木作業" alt="土木作業イメージ" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-gray-700 text-lg">小規模な掘削から、生コン打設、アスファルトの補修、塀の設置・解体まで、様々な土木作業に対応いたします。専門知識と技術で安心の施工をお約束します。</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-700">
+                        <li>掘削</li>
+                        <li>生コン打設</li>
+                        <li>アスファルトの補修</li>
+                        <li>塀の設置や解体</li>
+                        <li>その他、ご要望に応じた土木工事</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- お問い合わせCTAセクション: 行動を促す呼びかけ -->
+            <section class="bg-blue-700 text-white py-16 text-center rounded-xl shadow-lg">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">まずはお気軽にご相談ください！</h2>
+                <p class="text-xl md:text-2xl mb-8">お見積もりは無料です。どんな小さなお悩みでも、空がお手伝いします。</p>
+                <a href="about.html#contact" class="bg-white text-blue-700 hover:bg-gray-200 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors duration-300 transform hover:scale-105">お問い合わせはこちら</a>
+            </section>
         </div>
-	</article>
     </main>
-    <footer>
-<div class="container">
-<div class="row">
-    <div class="col span-4">
-        <h5>フッター１</h5>
-        <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
-    </div>
-    <div class="col span-4">
-        <h5>フッター２</h5>
-        <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
-    </div>
-    <div class="col span-4">
-        <h5>フッター３</h5>
-        <p>ここにSNSやテキストなどが入ります。SNSやテキストなどが入ります。</p>
-    </div>
+
+    <!-- フッターセクション (Homeページと共通) -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 町の便利屋さん 空. All rights reserved.</p>
         </div>
-</div>
     </footer>
-    <div class="copyright">
-<div class="container">
-<div class="row">
-    <div class="col">
-    Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
-    
-    </div>    
-        </div>
-    </div>
-        </div>
-<p id="pagetop"><a href="#">TOP</a></p>    
+
+    <!-- JavaScriptファイルへのリンク: モバイルナビゲーションの動作を制御 -->
+    <script src="js/script.js"></script>
 </body>
 </html>
+

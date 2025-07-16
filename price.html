@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町の便利屋さん 空 - 料金</title>
+    <!-- Tailwind CSS CDNを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 外部CSSファイルへのリンク -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- ヘッダーセクション (Homeページと共通) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <div class="text-2xl font-bold text-gray-900 rounded-md">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">町の便利屋さん 空</a>
+            </div>
+            <!-- デスクトップ用ナビゲーションメニュー -->
+            <nav>
+                <ul class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">Home</a></li>
+                    <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">サービス</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">会社概要</a></li>
+                    <li><a href="exterior.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">エクステリア販売・施工</a></li>
+                    <li><a href="price.html" class="text-gray-700 hover:text-blue-600 transition-colors font-semibold rounded-md">料金</a></li>
+                </ul>
+                <!-- ハンバーガーメニューアイコン (モバイル表示時のみ) -->
+                <div class="md:hidden burger space-y-2 cursor-pointer p-2 rounded-md hover:bg-gray-100 transition-colors">
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line1"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line2"></div>
+                    <div class="w-8 h-0.5 bg-gray-800 rounded-full line3"></div>
+                </div>
+            </nav>
+        </div>
+        <!-- モバイルナビゲーションメニュー (JavaScriptで表示/非表示を切り替え) -->
+        <ul class="md:hidden nav-links fixed top-0 right-0 h-full w-2/3 bg-gray-800 text-white flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-500 ease-in-out z-50">
+            <li><a href="index.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">Home</a></li>
+            <li><a href="services.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">サービス</a></li>
+            <li><a href="about.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">会社概要</a></li>
+            <li><a href="exterior.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">エクステリア販売・施工</a></li>
+            <li><a href="price.html" class="text-white text-2xl hover:text-blue-400 transition-colors rounded-md">料金</a></li>
+        </ul>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">料金について</h1>
+            <p class="text-lg text-center mb-12 text-gray-700 max-w-2xl mx-auto">「町の便利屋さん 空」では、お客様に安心してご利用いただけるよう、明確な料金体系を心がけております。作業内容や時間によって料金が異なりますので、まずはお気軽にお見積もりをご依頼ください。お見積もりは無料です。</p>
+
+            <!-- 基本料金の目安セクション -->
+            <section class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">基本料金の目安</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-blue-100">
+                                <th class="py-3 px-6 border-b border-blue-200 text-lg font-semibold text-blue-800 rounded-tl-lg">サービス内容</th>
+                                <th class="py-3 px-6 border-b border-blue-200 text-lg font-semibold text-blue-800">料金目安</th>
+                                <th class="py-3 px-6 border-b border-blue-200 text-lg font-semibold text-blue-800 rounded-tr-lg">備考</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">便利屋（軽作業）</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">¥3,000〜/30分</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">簡単な家具移動、電球交換など</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">草刈り</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">¥5,000〜/1時間</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">広さや草の量により変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">家内整理・片付け</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">¥8,000〜/1時間 (スタッフ1名)</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">作業量、スタッフ人数により変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">不用品回収</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">¥2,000〜/1点</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">品目、サイズ、重量により変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">引越しのお手伝い</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">¥15,000〜/1回</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">荷物量、移動距離により変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">解体・移動作業</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">要見積もり</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">作業内容、規模により大きく変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">土木作業</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">要見積もり</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">作業内容、規模により大きく変動</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg rounded-bl-lg">エクステリア販売・施工</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg">要見積もり</td>
+                                <td class="py-4 px-6 border-b border-gray-200 text-lg rounded-br-lg">製品、施工内容により大きく変動</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-gray-600 mt-6">※上記料金はあくまで目安です。実際の料金は、作業内容、時間、必要な人員、使用する機材、出張費などによって変動いたします。</p>
+                <p class="text-sm text-gray-600 mt-2">※表示価格は税抜き価格です。</p>
+            </section>
+
+            <!-- 料金に関する注意事項セクション -->
+            <section class="mb-16 bg-blue-50 p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-blue-700 border-b-2 border-blue-300 pb-4">料金に関する注意事項</h2>
+                <ul class="list-disc list-inside space-y-4 text-lg text-gray-700">
+                    <li><strong class="text-gray-900">お見積もりは無料です:</strong> まずはお気軽にお問い合わせいただき、無料でお見積もりをご依頼ください。</li>
+                    <li><strong class="text-gray-900">明確な料金提示:</strong> 作業前に必ず料金を提示し、ご納得いただいてから作業を開始いたします。</li>
+                    <li><strong class="text-gray-900">追加料金なし:</strong> お見積もり後の追加料金は、お客様の追加のご要望がない限り発生いたしません。</li>
+                    <li><strong class="text-gray-900">出張費について:</strong> 札幌市内は無料です。市外の場合は別途出張費が発生する場合がございます。詳細はお問い合わせください。</li>
+                    <li><strong class="text-gray-900">キャンセル料について:</strong> 作業日前日・当日のキャンセルについては、キャンセル料が発生する場合がございます。</li>
+                </ul>
+            </section>
+
+            <!-- お問い合わせCTAセクション: 行動を促す呼びかけ -->
+            <section class="bg-blue-700 text-white py-16 text-center rounded-xl shadow-lg">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">まずはお気軽にお見積もりをご依頼ください！</h2>
+                <p class="text-xl md:text-2xl mb-8">お客様のご状況に合わせて、最適なプランと明確な料金をご提案いたします。</p>
+                <a href="about.html#contact" class="bg-white text-blue-700 hover:bg-gray-200 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors duration-300 transform hover:scale-105">無料見積もり依頼はこちら</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- フッターセクション (Homeページと共通) -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 町の便利屋さん 空. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScriptファイルへのリンク: モバイルナビゲーションの動作を制御 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
